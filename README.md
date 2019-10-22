@@ -49,7 +49,9 @@
 ### 21.10.2019 Pazartesi
 - ArrayList metotları
 ### 22.10.2019 Salı
-- 
+- LinkedList metotları
+- Stack metotları
+- Vector metotları
 ### 23.10.2019 Çarşamba
 - 
 
