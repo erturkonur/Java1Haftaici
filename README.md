@@ -53,5 +53,6 @@
 - Stack metotları
 - Vector metotları
 ### 23.10.2019 Çarşamba
-- 
-
+- Queue metotları
+- Deque metotları
+- HashMap metotları
