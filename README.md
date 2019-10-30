@@ -56,3 +56,6 @@
 - Queue metotları
 - Deque metotları
 - HashMap metotları
+## 6.hafta
+### 30.10.2019 Çarşamba
+- Encapsulation (Kapsülleme)
