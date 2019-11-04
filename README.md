@@ -59,3 +59,6 @@
 ## 6.hafta
 ### 30.10.2019 Çarşamba
 - Encapsulation (Kapsülleme)
+## 7.hafta
+### 04.11.2019 Pazartesi
+- Encapsulation (Kapsülleme)
