@@ -62,3 +62,5 @@
 ## 7.hafta
 ### 04.11.2019 Pazartesi
 - Encapsulation (Kapsülleme)
+### 05.11.2019 Salı
+### 06.11.2019 Çarşamba
