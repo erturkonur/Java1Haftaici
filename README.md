@@ -65,4 +65,6 @@
 ### 05.11.2019 Salı
 - Inheritance (Kalıtım)
 ### 06.11.2019 Çarşamba
-- 
+- Abstraction (Soyutlama)
+- Polymorphism (Çok Biçimlilik)
+
