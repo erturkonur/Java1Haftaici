@@ -63,5 +63,6 @@
 ### 04.11.2019 Pazartesi
 - Encapsulation (Kapsülleme)
 ### 05.11.2019 Salı
-- Inheritance (Miras Alma)
+- Inheritance (Kalıtım)
 ### 06.11.2019 Çarşamba
+- 
