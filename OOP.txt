@@ -1,0 +1,78 @@
+OOP Ýlkeleri:
+- Encapsulation (Kapsülleme)
+- Inheritance (Kalýtým)
+- Polymorphism (Çok Biçimlilik)
+- Abstraction (Soyutlama)
+
+OOP Avantajlarý:
+- Kod okunabilirliðini arttýrýr.
+- Kod güvenliðini arttýrýr.
+- Daha hýzlý/performanslý uygulama geliþtirmemize olanak tanýr.
+- Ayný dilde yazýlým geliþtiren kiþilerin ortak standartlarda uygulama üretmesini saðlar.
+- Daha kolay kod yazabilme, sorunlara karþý hýzlý çözüm üretebilme becerisi kazandýrýr.
+
+Encapsulation (Kapsülleme):
+- Her deðiþkenin private eriþim seviyesinde tanýmlanmasý
+- Boþ ve dolu constructorlar üretilmesi
+- Her deðiþken için getter ve setter metotlarýnýn üretilmesi
+- this kelmesinin önemi
+- toString metodunun önemi
+
+Constructor nedir ?
+- Class ile birebir ayný isme sahip olan geri dönüþ tipleri olmayan metot ismidir.
+- Bir sýnýfýn boþ veya dolu constructorlarý olabilir.
+- Eðer bir dolu constructor üretirseniz, boþ constructor üretmeniz önerilir.
+- Constructor yapýcý metot demektir. 
+		 
+Yapýcý Metodun saðladýðý avantaj nedir ?
+- Bir nesne üretilirken örneðin: Kedi kedi = new Kedi(); diyerek bir nesne üretmiþ
+oluruz. Eðer parantez içerisi boþ ise Boþ constructor, dolu ise dolu constructor
+çaðýrmýþ oluruz.
+		 
+- Dolu constructor'un bize saðlamýþ olduðu avantaj, nesnenin üretilmesi esnasýnda
+bir iþlem gerçekleþtirmek için kullanabileceðimiz metottur. 
+- Yapýcý Constructor, nesnenin üretilmesi zamanýnda çalýþýr.
+	 
+- Dolu constructor seviyesinde belirttiðimiz parametreler sayesinde, ürettiðimiz sýnýfýn
+içerisinde bulunan private field(deðiþken)larýn deðerini nesne üretilmesi zamanýnda
+tek satýrda doldurabiliriz.
+		 
+- Eðer dolu constructor üretmemiþ olsaydýk ilgili nesneye ait deðer atamasýný yapamazdýk.
+Ýlgili deðiþkene ait deðer atamasýný setter metot üreterek yapmamýz gerekir.
+Eðer ilgili deðiþkene ait set metot da üretilmemiþ ise ve o deðiþken private olarak
+tanýmlanmýþ ise hiçbir þekilde o deðiþkene varsayýlan deðer atamasý yapýlamazdý.
+
+Inheritance (Kalýtým):
+- super kelmesinin önemi
+- extends kelimesinin önemi
+- Metot override iþlemi
+- Bir sýnýf, eðer belirtilir ise farklý bir sýnýftan türetilebilir. Bu türeme iþlemini
+"miras almak" olarak tanýmlarýz. Miras alýnan sýnýf üst sýnýf olarak tanýmlanýr.
+- Bir sýnýftan miras alýrsak; o sýnýfa ait deðiþken ve metotlarý doðrudan bulunduðumuz
+sýnýf içersinde kullanabiliriz.
+- Bulunduðumuz sýnýfta yazmasak bile, sýnýfý üretirken üst sýnýftan miras yoluyla metot 
+ve deðiþken isimlerini görebiliriz.
+- Bir sýnýfý üst sýnýf olarak tanýmlamak istiyorsak (super class) bulunduðumuz sýnýfýn 
+isminin sað tarafýna extends kelimesi eklendikten sonra sadece 1 adet sýnýf ismi 
+belirtilebilir.
+- Bir sýnýf doðrudan birden fazla sýnýftan türeyemez. Dolaylý yoldan bir sýnýf farklý 
+bir sýnýftan, o sýnýfta yine farklý bir sýnfýtan türeyebilir.
+
+Abstraction (Soyutlama):
+-- Abstract class
+--- Abstract sýnýflar üretilmesi zamanýnda "public abstract class SinifAdi" þeklinde tanýmlanýr.
+--- Abstract sýnýf, üretilen ilgili sýnýfýn doðrudan üretilmesine engel olan bir yapýya sahiptir.
+--- Örn: Normalde bir nesne üretilirken Araba araba = new Araba(); dediðimizde = new Araba();
+olan kýsým uyarý verir.
+--- Abstract sýnýflar doðrudan üretilemez, dolaylý yoldan farklý bir sýnýftan kalýtým yoluyla
+üretilir.
+--- Bu iþlemi sýnýfýn önemli metot ve deðiþkenlerini yazýlýmcý doðrudan görmesin istiyorsak 
+güvenlik dolayýsýyla gerçekleþtiririz.
+-- Abstract metot
+--- Bir metodun abstract olmasý için, ilgili sýnýfý da abstract olarak tanýmlamak gerekir.
+--- Bir sýnýfý farklý bir sýnýftan türetirken extends kelimesini kullanýyoruz. Eðer extends
+ettiðimiz sýnýf abstract sýnýf ise, içerisinde abstract metot bulunuyorsa o metotlarý bulunduðumuz
+sýnýf içerisine override ettirir.(Ýlgili metotlarýn orverride edilme zorunluluðu bulunur.
+--- Abstract metotlarýn scopelarý({}) bulunmaz.
+
+Polymorphism (Çok Biçimlilik):
