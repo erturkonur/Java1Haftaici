@@ -1,0 +1,152 @@
+Veritabaný Yönetim Sistemleri
+
+- Oracle Database
+
+* Microsoft SQL Server(MSSQL)
+- Remote Database
+- Windows iþletim sistemi baðýmlý çalýþýr.
+- C# ile uygulama geliþtirilmesinde (Form uygulamasý, Web uygulamasý) 1.tercih sebebidir.
+
+* MySQL Server
+- Remote Database
+- Açýk kaynaklýdýr. (Ücretsizdir.)
+-- MySQL Editörleri
+--- MySQL Workbench
+--- HeidiSQL
+--- Navicat
+--- phpMyAdmin (online)
+
+* SQLite
+- Açýk kaynaklýdýr. (Ücretsizdir.)
+- Ýþletim sistemi baðýmsýz çalýþýr. (Windows,Linux,Mac
+- Microsoft Access database'e alternatiftir.
+- Local olarak çalýþýr. (Kiþisel bilgisayarlardar kullaným içindir.)
+- Hýzlý sorgular yapýlýp, hýzlý sonuçlar alýnabilir.
+-- Python Programlama
+-- Java Programlama
+-- PHP Programlama
+-- C# Programlama
+-- Android Programlama
+-- iOS Programlama
+
+- PostgreSQL
+
+- mongoDB
+
+-------------------------
+
+- ogrenci
+-- id
+-- ad
+-- soyad
+-- tcno
+-- sinif_id
+-- adres
+-- telefon
+-- cinsiyet
+
+- ogretmen
+-- id
+-- ad
+-- soyad
+-- tcno
+-- telefon
+-- adres
+
+- ders
+-- id
+-- ad
+-- dakika
+
+- sinif
+-- id
+-- ad
+
+SQL SORGULARI
+
+*ALTER TABLE ÝFADESÝ
+
+ALTER TABLE 'ogrenci' ADD 'okula_kayit_tarihi' DATE NOT NULL AFTER 'id';
+- Bir tabloya sorgu ile yeni bir kolon kazandýrmak istiyorsak alter table sorgusu yazabiliriz.
+
+ALTER TABLE 'ogrenci' DROP 'cinsiyet';
+- Buradaki kod ise ogrenci tablosundaki cinsiyet kolonunu sildi.
+
+ALTER TABLE `ogrenci` CHANGE `okula_kayit_tarihi` `okul_kayit_tarihi` DATE NOT NULL;
+- Buradaki kod ilgili tabloda ismini bildiðimiz kolon ismini güncellemek için kullanýldý.
+
+*DROP ÝFADESÝ
+
+- drop table ogrenci
+-- Bir tabloyu tamamen yok etmek için kullanýlýr.
+
+- drop databse okul2
+-- Bir database i tamamen yok etmek için kullanýlýr.
+
+*CREATE TABLE ÝFADESÝ
+
+create table sinif(
+	id int PRIMARY KEY AUTO_INCREMENT,
+	ad varchar(25) null
+);
+
+- CREATE TABLE ifadesinden sonra tablo ismi belirtilir parantez açýp kapatýlýr.
+- parantez içersinde ise satýr satýr, kolon isimleri belirtilir.
+- Kolonlar tanýmlanýrken ilgili satýrda önce kolon ismi, sonra tip, varsa sonrasýnda ek özellikler tanýmlanýr.
+- Eðer bir kolon varsayýlan deðer içermiyorsa ilgili satýrýn en sonuna null yazýlýr.
+
+- create database okul2;
+- Sorgu ile veritabaný üretmek için kullanýlýr.
+
+*INSERT INTO ÝFADESÝ
+
+INSERT INTO TabloAdi() VALUES();
+
+- insert into kelimesinden sonra tablo ismi belirtilir. Ardýndan parantez açýlýp kapatýlýr.
+Ýlgili parantezin içerisine ekleme yapýlacak kolon isimleri belirtilir.
+Parantez kapanýþýndan sonra values kelimesi belirtilir ve yeniden parantez açýp kapatýlýr.
+2. parantez açýlýþ kapanýþý içersine ise, birinci parantez içersinde belirtilen kolonlara 
+ait deðerler yazýlýr.
+Eðer eklenen deðer string ifade ise tek týrnak içersinde tanýmlanýr.
+
+-- insert into ifadesi ilgili tabloya satýr verisi eklemek için kullanýlýr.
+
+INSERT INTO sinif(ad) VALUES ('Lab 01');
+INSERT INTO sinif(ad) VALUES ('Lab 02');
+INSERT INTO sinif(ad) VALUES ('Lab 03');
+INSERT INTO sinif(ad) VALUES ('Lab 04');
+INSERT INTO sinif(ad) VALUES ('Lab 05');
+INSERT INTO sinif(ad) VALUES ('Lab 06');
+INSERT INTO sinif(ad) VALUES ('Lab 07');
+INSERT INTO sinif(ad) VALUES ('Lab 08');
+INSERT INTO sinif(ad) VALUES ('Lab 09');
+INSERT INTO sinif(ad) VALUES ('Lab 10');
+INSERT INTO sinif(ad) VALUES ('Lab 11');
+
+*DELETE ÝFADESÝ
+
+DELETE FROM sinif where id=11
+DELETE FROM sinif where id=9
+DELETE FROM sinif where id=5
+
+--id'sini bildiðim satýr verisini sildim.
+
+delete from sinif
+
+- Eðer bir þart belirtilmezse, tablodaki bütün satýr verilerini siler.
+
+*SELECT ÝFADESÝ
+
+Select * FROM sinif
+-- sinif tablosundaki tüm satýrlarý, tüm kolonlarýyla birlikte getirir.
+
+Select ad from sinif
+-- sadece ad kolonunu getirir.
+-- Birden fazla kolon deðerini çaðýrmak istiyorsak Select sonrasýnda ilgili kolon
+isimlerini virgüllerle ayýrýp yazabiliriz.
+
+SELECT * FROM `sinif` WHERE id = 15
+-- id'si 15 olan satýrý getirir.
+
+SELECT * FROM `sinif` where ad='Lab 09'
+-- ad kolon deðeri Lab 09 olan satýrý getirir.
