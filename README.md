@@ -67,4 +67,6 @@
 ### 06.11.2019 Çarşamba
 - Abstraction (Soyutlama)
 - Polymorphism (Çok Biçimlilik)
-
+### 11.11.2019 Pazartesi
+- Temel veritabanı sorguları
+### 12.11.2019 Salı
