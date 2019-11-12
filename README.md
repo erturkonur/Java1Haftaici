@@ -73,4 +73,7 @@
 ## 8.hafta
 ### 11.11.2019 Pazartesi
 - Temel veritabanı sorguları
+- phpMyAdmin
 ### 12.11.2019 Salı
+- HeidiSQL
+- Java veritabanı işlemleri
