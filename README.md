@@ -77,3 +77,5 @@
 ### 12.11.2019 Salı
 - HeidiSQL
 - Java veritabanı işlemleri
+### 13.11.2019 Çarşamba
+- Java veritabanı işlemleri
